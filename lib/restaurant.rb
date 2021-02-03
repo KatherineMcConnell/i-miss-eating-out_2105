@@ -6,6 +6,7 @@ class Restaurant
     @name = name
     @dishes = []
     @closing_time = ()
+
   end
 
   def dishes
@@ -19,5 +20,13 @@ class Restaurant
   def closing_time(hours)
     converted_value = @opening_time.slice(0..1).to_i + hours
     @closing_time = "#{converted_value}:00"
+  end
+
+  def open_for_lunch?
+    if @opening_time.slice(0..1).to_i < 12
+      true
+    else
+      false
+    end
   end
 end
