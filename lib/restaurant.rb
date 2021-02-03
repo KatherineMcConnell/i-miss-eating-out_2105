@@ -35,6 +35,6 @@ class Restaurant
     @dishes.each do |dish|
     upcase_dishes << dish.upcase
     end
-    p upcase_dishes
+    print upcase_dishes
   end
 end
