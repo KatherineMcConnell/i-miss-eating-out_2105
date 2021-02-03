@@ -71,6 +71,7 @@ class RestaurantTest < Minitest::Test
   end
 
   def test_announce_closing_time
+    skip
     restaurant1 = Restaurant.new('6:00', 'Fuel Cafe')
     restaurant2 = Restaurant.new('16:00', 'Il Posto')
 

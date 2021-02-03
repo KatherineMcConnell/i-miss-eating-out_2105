@@ -35,6 +35,15 @@ class Restaurant
     @dishes.each do |dish|
     upcase_dishes << dish.upcase
     end
-    print upcase_dishes
+    p upcase_dishes
   end
+
+  # def announce_closing_time(hours)
+  #   converted_time = @opening_time.slice(0..1).to_i + hours
+  #   if converted_time > 12
+  #     pm_time= converted_time - 12
+  #     puts "#{@name} will be closing at #{pm_time}pm"
+  #   else
+  #
+  # end
 end
