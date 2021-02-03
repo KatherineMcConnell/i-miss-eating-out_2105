@@ -11,7 +11,7 @@ class RestaurantTest < Minitest::Test
   end
 
   def test_it_has_opening_time
-    skip
+    #skip
     restaurant = Restaurant.new('10:00', 'Fuel Cafe')
 
     assert_equal '10:00', restaurant.opening_time
