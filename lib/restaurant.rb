@@ -12,6 +12,9 @@ class Restaurant
     @dishes
   end
 
+  def add_dish(dish)
+    dishes.push(dish)
+  end
 
   def closing_time(hours)
     converted_value = @opening_time.slice(0..1).to_i + hours
